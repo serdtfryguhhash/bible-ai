@@ -23,6 +23,7 @@ import {
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
+import { StreakBadge } from "@/components/shared/StreakBadge";
 
 const NAV_ITEMS = [
   { href: "/journal", label: "Journal", icon: PenLine },
@@ -57,15 +58,7 @@ export function Navbar() {
 
         {/* Streak */}
         <div className="px-6 py-4 border-b border-warm-100">
-          <div className="flex items-center gap-2 bg-accent-50 rounded-lg px-3 py-2">
-            <Flame className="w-4 h-4 text-accent-500" />
-            <span className="text-sm font-medium text-accent-700">7-day streak</span>
-            <div className="ml-auto flex gap-0.5">
-              {[1, 2, 3, 4, 5, 6, 7].map((d) => (
-                <div key={d} className="w-1.5 h-1.5 rounded-full bg-accent-400" />
-              ))}
-            </div>
-          </div>
+          <StreakBadge />
         </div>
 
         {/* Nav Items */}
@@ -131,10 +124,7 @@ export function Navbar() {
         </Link>
 
         <div className="flex items-center gap-2">
-          <div className="flex items-center gap-1 bg-accent-50 rounded-full px-2.5 py-1">
-            <Flame className="w-3.5 h-3.5 text-accent-500" />
-            <span className="text-xs font-medium text-accent-700">7</span>
-          </div>
+          <StreakBadge />
           <Button
             variant="ghost"
             size="icon"

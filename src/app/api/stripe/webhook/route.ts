@@ -1,11 +1,11 @@
 import { NextRequest, NextResponse } from "next/server";
 import Stripe from "stripe";
 
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY || "", {
-  apiVersion: "2023-10-16" as Stripe.LatestApiVersion,
-});
-
-const webhookSecret = process.env.STRIPE_WEBHOOK_SECRET || "";
+function getStripe() {
+  return new Stripe(process.env.STRIPE_SECRET_KEY || "sk_test_placeholder", {
+    apiVersion: "2023-10-16" as Stripe.LatestApiVersion,
+  });
+}
 
 export async function POST(request: NextRequest) {
   try {
@@ -19,6 +19,8 @@ export async function POST(request: NextRequest) {
     let event: Stripe.Event;
 
     try {
+      const stripe = getStripe();
+      const webhookSecret = process.env.STRIPE_WEBHOOK_SECRET || "";
       event = stripe.webhooks.constructEvent(body, signature, webhookSecret);
     } catch {
       return NextResponse.json({ error: "Invalid signature" }, { status: 400 });

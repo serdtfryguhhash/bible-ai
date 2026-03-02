@@ -15,6 +15,7 @@ export async function POST(request: NextRequest) {
     const {
       action, message, journalEntry, denomination = "nondenominational",
       prayerRequests, reflectionAreas, reference, journalContext,
+      spiritualContext,
     } = body;
 
     let response: string;
@@ -39,15 +40,19 @@ export async function POST(request: NextRequest) {
         response = await generateDailyVerse(denomination);
         break;
       case "chat":
-      default:
+      default: {
+        const memoryContext = spiritualContext
+          ? `\n\n${spiritualContext}\n\nUse this spiritual memory to personalize your response. Reference their prayer patterns, favorite scriptures, and spiritual journey when relevant. Make them feel known and understood.`
+          : "";
         response = await chat([
           {
             role: "system",
-            content: "You are Bible.ai — a compassionate faith companion. Help users with scripture, prayer, and spiritual growth. Be warm, grace-centered, and never judgmental.",
+            content: `You are Bible.ai — a compassionate faith companion. Help users with scripture, prayer, and spiritual growth. Be warm, grace-centered, and never judgmental.${memoryContext}`,
           },
           { role: "user", content: message },
         ]);
         break;
+      }
     }
 
     return NextResponse.json({ success: true, response });

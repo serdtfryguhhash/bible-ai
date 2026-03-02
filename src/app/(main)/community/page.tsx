@@ -15,6 +15,7 @@ import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Input } from "@/components/ui/input";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogFooter } from "@/components/ui/dialog";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { PrayerWall } from "@/components/features/prayer-wall";
 import { formatDate } from "@/lib/utils";
 import type { CommunityPost } from "@/types";
 
@@ -225,6 +226,9 @@ export default function CommunityPage() {
 
           {/* Sidebar */}
           <div className="space-y-6">
+            {/* Prayer Wall */}
+            <PrayerWall />
+
             <Card>
               <CardHeader>
                 <CardTitle className="text-lg flex items-center gap-2">
@@ -242,27 +246,6 @@ export default function CommunityPage() {
                   <div key={stat.label} className="flex items-center justify-between py-1.5">
                     <span className="text-sm text-warm-500">{stat.label}</span>
                     <span className="font-semibold text-primary">{stat.value}</span>
-                  </div>
-                ))}
-              </CardContent>
-            </Card>
-
-            <Card className="border-accent-200/50">
-              <CardHeader>
-                <CardTitle className="text-lg flex items-center gap-2">
-                  <HandHeart className="w-4 h-4 text-accent-500" />
-                  Prayer Wall
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-3">
-                {SAMPLE_POSTS.filter((p) => p.type === "prayer").slice(0, 3).map((post) => (
-                  <div key={post.id} className="bg-purple-50/50 rounded-lg p-3 border border-purple-100/30">
-                    <p className="text-xs font-medium text-purple-800 mb-1">{post.author_name}</p>
-                    <p className="text-xs text-purple-700 line-clamp-2">{post.content}</p>
-                    <Button variant="ghost" size="sm" className="mt-1 text-[10px] text-purple-600 h-6 px-2">
-                      <HandHeart className="w-3 h-3 mr-1" />
-                      Pray for this
-                    </Button>
                   </div>
                 ))}
               </CardContent>

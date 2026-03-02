@@ -19,6 +19,8 @@ import {
   HandHeart,
   BookMarked,
   Crown,
+  Brain,
+  Clock,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
@@ -32,6 +34,8 @@ const NAV_ITEMS = [
   { href: "/confession", label: "Confession", icon: HandHeart },
   { href: "/scripture", label: "Scripture", icon: Search },
   { href: "/plans", label: "Plans", icon: BookMarked },
+  { href: "/memorize", label: "Memorize", icon: Brain },
+  { href: "/timeline", label: "Timeline", icon: Clock },
   { href: "/community", label: "Community", icon: Users },
   { href: "/shop", label: "Shop", icon: ShoppingBag },
   { href: "/church", label: "Church", icon: Church },
@@ -194,7 +198,7 @@ export function Navbar() {
           { href: "/journal", label: "Journal", icon: PenLine },
           { href: "/devotional", label: "Devos", icon: BookOpen },
           { href: "/prayer", label: "Prayer", icon: Heart },
-          { href: "/scripture", label: "Bible", icon: Search },
+          { href: "/memorize", label: "Memory", icon: Brain },
           { href: "/community", label: "Community", icon: Users },
         ].map((item) => {
           const isActive = pathname.startsWith(item.href);

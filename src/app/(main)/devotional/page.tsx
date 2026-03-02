@@ -12,6 +12,11 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ScriptureCard } from "@/components/shared/ScriptureCard";
+import { DevotionScore } from "@/components/features/devotion-score";
+import { DailyChallenge } from "@/components/features/daily-challenge";
+import { PersonalizedVerse } from "@/components/features/personalized-verse";
+import { WeeklyReport } from "@/components/features/weekly-report";
+import { ShareCard } from "@/components/shared/ShareCard";
 import { getDailyVerse, DAILY_VERSES } from "@/constants/scripture";
 import { formatDate } from "@/lib/utils";
 import type { Devotional } from "@/types";
@@ -67,7 +72,7 @@ const SAMPLE_DEVOTIONALS: Devotional[] = [
 export default function DevotionalPage() {
   const [activeTab, setActiveTab] = useState("today");
   const [likedDevotionals, setLikedDevotionals] = useState<Set<string>>(new Set());
-  const dailyVerse = getDailyVerse();
+  const [shareOpen, setShareOpen] = useState(false);
   const todayDevotional = SAMPLE_DEVOTIONALS[0];
 
   const toggleLike = (id: string) => {
@@ -96,6 +101,10 @@ export default function DevotionalPage() {
               <Flame className="w-3 h-3 mr-1" />
               7-day streak
             </Badge>
+            <Button variant="ghost" size="sm" onClick={() => setShareOpen(true)}>
+              <Share2 className="w-4 h-4 mr-1" />
+              Share
+            </Button>
           </div>
         </div>
 
@@ -110,12 +119,8 @@ export default function DevotionalPage() {
             <div className="grid lg:grid-cols-3 gap-6">
               {/* Main Devotional */}
               <div className="lg:col-span-2 space-y-6">
-                {/* Today's Verse */}
-                <ScriptureCard
-                  reference={dailyVerse.reference}
-                  text={dailyVerse.text}
-                  theme={dailyVerse.theme}
-                />
+                {/* Personalized Verse */}
+                <PersonalizedVerse />
 
                 {/* Devotional Content */}
                 <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }}>
@@ -129,7 +134,6 @@ export default function DevotionalPage() {
                       <CardTitle className="text-2xl lg:text-3xl">{todayDevotional.title}</CardTitle>
                     </CardHeader>
                     <CardContent className="space-y-6">
-                      {/* Scripture */}
                       <div className="bg-primary-50/50 rounded-xl p-5 border border-primary-100/50">
                         <p className="font-serif font-semibold text-primary mb-2">{todayDevotional.scripture_reference}</p>
                         <blockquote className="scripture-text text-lg">
@@ -137,7 +141,6 @@ export default function DevotionalPage() {
                         </blockquote>
                       </div>
 
-                      {/* Reflection */}
                       <div>
                         <p className="text-xs uppercase tracking-widest text-accent-600 font-medium mb-3 flex items-center gap-1.5">
                           <BookOpen className="w-3.5 h-3.5" />
@@ -146,7 +149,6 @@ export default function DevotionalPage() {
                         <p className="text-warm-700 leading-relaxed">{todayDevotional.reflection}</p>
                       </div>
 
-                      {/* Prayer */}
                       <div className="bg-accent-50/50 rounded-xl p-5 border border-accent-100/50">
                         <p className="text-xs uppercase tracking-widest text-accent-600 font-medium mb-3 flex items-center gap-1.5">
                           <Heart className="w-3.5 h-3.5" />
@@ -157,7 +159,6 @@ export default function DevotionalPage() {
                         </p>
                       </div>
 
-                      {/* Action Step */}
                       <div className="bg-green-50/50 rounded-xl p-5 border border-green-100/50">
                         <p className="text-xs uppercase tracking-widest text-green-700 font-medium mb-3">
                           Action Step
@@ -165,7 +166,6 @@ export default function DevotionalPage() {
                         <p className="text-warm-700 leading-relaxed">{todayDevotional.action_step}</p>
                       </div>
 
-                      {/* Actions */}
                       <div className="flex items-center justify-between pt-4 border-t border-warm-100">
                         <div className="flex gap-2">
                           <Button
@@ -177,7 +177,7 @@ export default function DevotionalPage() {
                             <Heart className={`w-4 h-4 mr-1.5 ${likedDevotionals.has(todayDevotional.id) ? "fill-current" : ""}`} />
                             {todayDevotional.likes_count + (likedDevotionals.has(todayDevotional.id) ? 1 : 0)}
                           </Button>
-                          <Button variant="ghost" size="sm">
+                          <Button variant="ghost" size="sm" onClick={() => setShareOpen(true)}>
                             <Share2 className="w-4 h-4 mr-1.5" />
                             Share
                           </Button>
@@ -192,10 +192,19 @@ export default function DevotionalPage() {
                     </CardContent>
                   </Card>
                 </motion.div>
+
+                {/* Daily Challenge */}
+                <DailyChallenge />
               </div>
 
               {/* Sidebar */}
               <div className="space-y-6">
+                {/* Devotion Score */}
+                <DevotionScore />
+
+                {/* Weekly Report */}
+                <WeeklyReport />
+
                 <Card>
                   <CardHeader>
                     <CardTitle className="text-lg">This Week&apos;s Themes</CardTitle>
@@ -227,10 +236,10 @@ export default function DevotionalPage() {
                         Add Prayer Request
                       </Button>
                     </Link>
-                    <Link href="/scripture" className="block">
+                    <Link href="/memorize" className="block">
                       <Button variant="outline" className="w-full justify-start">
                         <BookOpen className="w-4 h-4 mr-2" />
-                        Explore Scripture
+                        Memorize Scripture
                       </Button>
                     </Link>
                   </CardContent>
@@ -293,6 +302,8 @@ export default function DevotionalPage() {
           </TabsContent>
         </Tabs>
       </div>
+
+      <ShareCard open={shareOpen} onClose={() => setShareOpen(false)} />
     </div>
   );
 }

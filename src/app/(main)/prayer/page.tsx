@@ -11,9 +11,9 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Textarea } from "@/components/ui/textarea";
 import { Badge } from "@/components/ui/badge";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-// import { Input } from "@/components/ui/input";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogFooter } from "@/components/ui/dialog";
 import { EncryptionIndicator } from "@/components/shared/EncryptionIndicator";
+import { PrayerInsights } from "@/components/features/prayer-insights";
 import { usePrayer } from "@/hooks/usePrayer";
 import { getPrayerCategoryLabel, getPrayerCategoryIcon, formatDate } from "@/lib/utils";
 import type { PrayerCategory } from "@/types";
@@ -41,7 +41,6 @@ export default function PrayerPage() {
   const [showAnsweredDialog, setShowAnsweredDialog] = useState(false);
   const [answeredPrayerId, setAnsweredPrayerId] = useState("");
   const [answeredNote, setAnsweredNote] = useState("");
-  
   const [currentSuggestion, setCurrentSuggestion] = useState(0);
 
   const activePrayers = getByStatus("active");
@@ -285,6 +284,9 @@ export default function PrayerPage() {
 
           {/* Sidebar */}
           <div className="space-y-6">
+            {/* Prayer Insights */}
+            <PrayerInsights />
+
             {/* AI Suggested Prayer */}
             <Card className="border-accent-200/50">
               <CardHeader>

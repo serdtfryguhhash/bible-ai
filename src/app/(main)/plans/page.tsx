@@ -9,9 +9,10 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
 import { READING_PLANS } from "@/constants/scripture";
+import { BibleProgress } from "@/components/features/bible-progress";
 
 export default function PlansPage() {
-  const [activeTab, setActiveTab] = useState<"my-plans" | "discover">("my-plans");
+  const [activeTab, setActiveTab] = useState<"my-plans" | "discover" | "progress">("my-plans");
 
   const myProgress = {
     planId: "gospels-30",
@@ -56,9 +57,18 @@ export default function PlansPage() {
           >
             Discover
           </Button>
+          <Button
+            variant={activeTab === "progress" ? "default" : "outline"}
+            onClick={() => setActiveTab("progress")}
+          >
+            <Trophy className="w-4 h-4 mr-1.5" />
+            Progress & Badges
+          </Button>
         </div>
 
-        {activeTab === "my-plans" ? (
+        {activeTab === "progress" ? (
+          <BibleProgress />
+        ) : activeTab === "my-plans" ? (
           <div className="space-y-6">
             {/* Current Plan */}
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
@@ -103,7 +113,6 @@ export default function PlansPage() {
                     </div>
                   </div>
 
-                  {/* Today's Reading Preview */}
                   <Card className="bg-primary-50/50 border-primary-100/50">
                     <CardContent className="pt-4 pb-4">
                       <div className="flex items-center justify-between mb-2">
@@ -113,9 +122,7 @@ export default function PlansPage() {
                       <h3 className="font-serif text-lg font-semibold text-primary mb-1">
                         {READING_PLANS[0].readings[4]?.title || "The Sermon on the Mount"}
                       </h3>
-                      <p className="text-sm text-warm-500 mb-3">
-                        Matthew 5:1-48
-                      </p>
+                      <p className="text-sm text-warm-500 mb-3">Matthew 5:1-48</p>
                       <p className="text-sm text-warm-600 leading-relaxed line-clamp-3">
                         {READING_PLANS[0].readings[4]?.commentary || ""}
                       </p>
@@ -128,7 +135,6 @@ export default function PlansPage() {
                     </CardContent>
                   </Card>
 
-                  {/* Week Progress */}
                   <div>
                     <p className="text-sm font-medium text-warm-600 mb-3">This Week</p>
                     <div className="grid grid-cols-7 gap-2">
@@ -154,7 +160,6 @@ export default function PlansPage() {
               </Card>
             </motion.div>
 
-            {/* Completed Plans */}
             <Card>
               <CardHeader>
                 <CardTitle className="text-lg flex items-center gap-2">

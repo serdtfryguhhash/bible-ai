@@ -11,11 +11,11 @@ export async function POST(request: NextRequest) {
       ],
       family: [
         "Father God, You designed family as a reflection of Your love. I lift up my family to You today. Where there is distance, bring closeness. Where there is misunderstanding, bring clarity. Where there is hurt, bring healing. Unite us in Your love. Amen.",
-        "Lord, bless my family with Your presence today. Help us to love each other the way You love us — unconditionally, patiently, and sacrificially. Guard our home with Your peace. Amen.",
+        "Lord, bless my family with Your presence today. Help us to love each other the way You love us - unconditionally, patiently, and sacrificially. Guard our home with Your peace. Amen.",
       ],
       guidance: [
         "Lord, I stand at a crossroads and I need Your wisdom. Your Word says if any of us lacks wisdom, we should ask You, who gives generously without finding fault. I ask now. Illuminate my path. Give me clarity, courage, and peace about the direction You're leading. Amen.",
-        "Father, I don't need to see the whole road — just the next step. Show me that step today. Help me to trust that You are ordering my steps even when the path seems unclear. Amen.",
+        "Father, I don't need to see the whole road - just the next step. Show me that step today. Help me to trust that You are ordering my steps even when the path seems unclear. Amen.",
       ],
       gratitude: [
         "Lord, I pause to thank You. For breath in my lungs. For grace that is new this morning. For the countless blessings I too often take for granted. You are good, and Your love endures forever. Fill my heart with gratitude today. Amen.",

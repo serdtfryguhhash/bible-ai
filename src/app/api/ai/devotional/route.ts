@@ -22,7 +22,7 @@ export async function POST(request: NextRequest) {
 Your role is to:
 1. Read the user's journal entry with empathy and grace
 2. Generate a personalized devotional that speaks directly to their heart
-3. Always be grace-centered — never judgmental, never condemning
+3. Always be grace-centered - never judgmental, never condemning
 4. Include real, accurate scripture references
 5. Provide practical, specific action steps
 6. Write prayer prompts that feel personal, not formulaic
@@ -51,7 +51,7 @@ Respond in JSON format:
         title: "Finding Peace in the Storm",
         scripture_reference: "Philippians 4:6-7",
         scripture_text: "Do not be anxious about anything, but in every situation, by prayer and petition, with thanksgiving, present your requests to God. And the peace of God, which transcends all understanding, will guard your hearts and your minds in Christ Jesus.",
-        reflection: "Your words today reveal a heart that is both honest and seeking. You've shared your struggles openly, and that takes courage. God sees every word you've written, and He meets you right where you are — not where you think you should be.\n\nThe apostle Paul wrote these words from a prison cell, yet he spoke of peace and joy. His circumstances didn't change, but his perspective was transformed by the presence of God. Your situation may feel overwhelming right now, but remember: the same God who sustained Paul sustains you.\n\nThis isn't about pretending everything is fine. It's about bringing everything — the good, the hard, the confusing — to the One who already knows and already cares.",
+        reflection: "Your words today reveal a heart that is both honest and seeking. You've shared your struggles openly, and that takes courage. God sees every word you've written, and He meets you right where you are - not where you think you should be.\n\nThe apostle Paul wrote these words from a prison cell, yet he spoke of peace and joy. His circumstances didn't change, but his perspective was transformed by the presence of God. Your situation may feel overwhelming right now, but remember: the same God who sustained Paul sustains you.\n\nThis isn't about pretending everything is fine. It's about bringing everything - the good, the hard, the confusing - to the One who already knows and already cares.",
         prayer_prompt: "Lord, I bring You everything I wrote about today. You know my heart better than I do. Where I am anxious, bring Your peace. Where I am uncertain, be my guide. Help me to release what I cannot control and trust that You are working all things together for good. In Jesus' name, Amen.",
         action_step: "Choose one worry from today and write it on a small piece of paper. Place it in your Bible at Philippians 4:6-7. Each time you see it, whisper a prayer of surrender.",
         theme: "peace",

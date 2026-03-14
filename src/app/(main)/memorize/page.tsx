@@ -356,7 +356,7 @@ export default function MemorizePage() {
               Add Verse to Memorize
             </DialogTitle>
             <DialogDescription>
-              &ldquo;I have hidden your word in my heart that I might not sin against you.&rdquo; — Psalm 119:11
+              &ldquo;I have hidden your word in my heart that I might not sin against you.&rdquo; - Psalm 119:11
             </DialogDescription>
           </DialogHeader>
           <div className="space-y-4">

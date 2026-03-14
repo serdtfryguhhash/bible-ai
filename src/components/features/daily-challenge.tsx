@@ -22,7 +22,7 @@ interface ChallengeData {
 const DEFAULT_CHALLENGES: ChallengeData[] = [
   {
     scripture: "Romans 12:2",
-    scriptureText: "Do not conform to the pattern of this world, but be transformed by the renewing of your mind. Then you will be able to test and approve what God's will is — his good, pleasing and perfect will.",
+    scriptureText: "Do not conform to the pattern of this world, but be transformed by the renewing of your mind. Then you will be able to test and approve what God's will is - his good, pleasing and perfect will.",
     question: "What is one pattern of this world that you find yourself conforming to, and how might God be calling you to be transformed in that area?",
     date: new Date().toISOString().split("T")[0],
     reflection: null,

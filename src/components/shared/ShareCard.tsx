@@ -114,7 +114,7 @@ export function ShareCard({ open, onClose }: ShareCardProps) {
               </Badge>
             </div>
 
-            <p className="text-center text-[10px] text-white/40 mt-3">bible.ai — Your AI Faith Companion</p>
+            <p className="text-center text-[10px] text-white/40 mt-3">bible.ai - Your AI Faith Companion</p>
           </div>
         </div>
 

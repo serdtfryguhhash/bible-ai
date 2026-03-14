@@ -74,7 +74,7 @@ export default function OnboardingPage() {
                     We&apos;re so glad you&apos;re here. Let&apos;s set up your personal faith companion so it serves you well on your spiritual journey.
                   </p>
                   <p className="text-sm text-warm-400 italic font-serif mb-8">
-                    &ldquo;For I know the plans I have for you, declares the Lord, plans to prosper you and not to harm you, plans to give you hope and a future.&rdquo; — Jeremiah 29:11
+                    &ldquo;For I know the plans I have for you, declares the Lord, plans to prosper you and not to harm you, plans to give you hope and a future.&rdquo; - Jeremiah 29:11
                   </p>
                   <Button variant="gold" size="xl" onClick={nextStep}>
                     Let&apos;s Begin

@@ -19,7 +19,7 @@ export function ScriptureCard({ reference, text, theme, showActions = true, clas
   const [copied, setCopied] = React.useState(false);
 
   const handleCopy = () => {
-    navigator.clipboard.writeText(`"${text}" — ${reference}`);
+    navigator.clipboard.writeText(`"${text}" - ${reference}`);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };

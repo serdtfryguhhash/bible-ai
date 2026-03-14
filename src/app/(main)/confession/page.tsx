@@ -23,20 +23,20 @@ const DENOMINATION_GUIDANCE: Record<Denomination, { intro: string; steps: string
       "Resolve to make amends and avoid these sins in the future.",
       "Prepare to bring these reflections to the Sacrament of Reconciliation with your priest.",
     ],
-    closing: "Remember: God's mercy is infinite. 'If we confess our sins, he is faithful and just and will forgive us our sins and purify us from all unrighteousness.' — 1 John 1:9. Please seek the Sacrament of Reconciliation for absolution.",
+    closing: "Remember: God's mercy is infinite. 'If we confess our sins, he is faithful and just and will forgive us our sins and purify us from all unrighteousness.' - 1 John 1:9. Please seek the Sacrament of Reconciliation for absolution.",
   },
   protestant: {
     intro: "Confession is between you and God. 'If we confess our sins, he is faithful and just and will forgive us our sins and purify us from all unrighteousness.' (1 John 1:9). This is a safe space to be honest with your Heavenly Father.",
     steps: [
       "Come before God honestly, without pretense or excuse.",
-      "Name what weighs on your heart specifically — God already knows, but naming it brings healing.",
+      "Name what weighs on your heart specifically - God already knows, but naming it brings healing.",
       "Receive God's forgiveness. It is already yours through Christ.",
       "Consider sharing with a trusted believer for accountability and prayer (James 5:16).",
     ],
     closing: "You are forgiven. Not because of what you do, but because of what Christ has already done. His grace is sufficient. Walk forward in freedom.",
   },
   nondenominational: {
-    intro: "God invites you to bring everything to Him — including the things you're most ashamed of. There is no condemnation for those who are in Christ Jesus (Romans 8:1). This is a grace-filled space.",
+    intro: "God invites you to bring everything to Him - including the things you're most ashamed of. There is no condemnation for those who are in Christ Jesus (Romans 8:1). This is a grace-filled space.",
     steps: [
       "Be still before God. He is not angry. He is waiting with open arms.",
       "Pour out your heart honestly. He can handle your truth.",
@@ -49,7 +49,7 @@ const DENOMINATION_GUIDANCE: Record<Denomination, { intro: string; steps: string
     intro: "The Mystery of Confession (Holy Repentance) is a sacred practice of the Church. While this space is for personal reflection, the fullness of confession is received through your priest in the Sacrament of Repentance.",
     steps: [
       "Examine your heart through prayer and reflection on the commandments.",
-      "Cultivate genuine repentance (metanoia) — a turning of the heart toward God.",
+      "Cultivate genuine repentance (metanoia) - a turning of the heart toward God.",
       "Express your sorrow and desire for reconciliation with God.",
       "Prepare to bring your confession before your priest, who stands as witness before Christ.",
     ],
@@ -110,7 +110,7 @@ export default function ConfessionPage() {
                   <ul className="space-y-1.5 text-sm text-green-700">
                     <li className="flex items-center gap-2">
                       <Lock className="w-3 h-3 flex-shrink-0" />
-                      <span>Double encrypted — even we cannot read your words</span>
+                      <span>Double encrypted - even we cannot read your words</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <Clock className="w-3 h-3 flex-shrink-0" />
@@ -118,7 +118,7 @@ export default function ConfessionPage() {
                     </li>
                     <li className="flex items-center gap-2">
                       <Trash2 className="w-3 h-3 flex-shrink-0" />
-                      <span>You can delete anytime — permanently and immediately</span>
+                      <span>You can delete anytime - permanently and immediately</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <Shield className="w-3 h-3 flex-shrink-0" />
@@ -245,7 +245,7 @@ export default function ConfessionPage() {
                     <div className="space-y-3 text-warm-700 leading-relaxed">
                       <p>
                         Thank you for your honesty before God. The very act of confession shows a heart that desires 
-                        holiness and closeness with your Creator. This is not weakness — this is strength.
+                        holiness and closeness with your Creator. This is not weakness - this is strength.
                       </p>
                       <p>
                         Remember what Scripture promises: &ldquo;If we confess our sins, he is faithful and just and will 

@@ -9,7 +9,7 @@ export async function POST(request: NextRequest) {
     const response = await chat([
       {
         role: "system",
-        content: `You are Bible.ai — a compassionate spiritual growth advisor generating weekly spiritual reports.
+        content: `You are Bible.ai - a compassionate spiritual growth advisor generating weekly spiritual reports.
 
 ${denomContext}
 
@@ -36,7 +36,7 @@ Respond in this EXACT JSON format only, no additional text:
           scripturesRead: 12,
           versesMemorized: 2,
           streakDays: 7,
-          growthInsight: "This week showed remarkable consistency in your devotional life. Your prayers have shifted from primarily requests to a beautiful balance of gratitude and intercession — a sign of spiritual maturity.",
+          growthInsight: "This week showed remarkable consistency in your devotional life. Your prayers have shifted from primarily requests to a beautiful balance of gratitude and intercession - a sign of spiritual maturity.",
           recommendedFocus: "Consider diving deeper into the book of James this week. Its practical wisdom aligns with the themes of faith-in-action you have been exploring in your journal.",
           encouragement: "Remember: faithfulness is not about perfection. It is about showing up, day after day, with a heart open to God. You are doing exactly that. Keep going.",
         },

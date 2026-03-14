@@ -33,7 +33,7 @@ export async function POST(request: NextRequest) {
               <p style="color: #7C2D12; font-style: italic; font-size: 18px; border-left: 3px solid #D4A843; padding-left: 16px; margin: 24px 0;">
                 "For I know the plans I have for you, declares the Lord, plans to prosper you and not to harm you, plans to give you hope and a future."
               </p>
-              <p style="color: #1E3A5F; font-weight: bold;">— Jeremiah 29:11</p>
+              <p style="color: #1E3A5F; font-weight: bold;">- Jeremiah 29:11</p>
               <p style="color: #1C1917; font-size: 14px; margin-top: 24px;">
                 Walk closer with God, every single day.
               </p>

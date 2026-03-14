@@ -1,7 +1,7 @@
 "use client";
 
 /**
- * Spiritual Guide Memory — Accumulates spiritual context for AI personalization
+ * Spiritual Guide Memory - Accumulates spiritual context for AI personalization
  * Tracks: prayer patterns, favorite scriptures, spiritual challenges,
  * devotional history, reading plan progress, journal themes.
  */

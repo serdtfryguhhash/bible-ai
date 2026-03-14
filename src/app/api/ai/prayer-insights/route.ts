@@ -9,7 +9,7 @@ export async function POST(request: NextRequest) {
     const response = await chat([
       {
         role: "system",
-        content: `You are Bible.ai — a compassionate prayer analyst. Analyze the user's prayer patterns and provide spiritual insights with relevant scriptures.
+        content: `You are Bible.ai - a compassionate prayer analyst. Analyze the user's prayer patterns and provide spiritual insights with relevant scriptures.
 
 ${denomContext}
 

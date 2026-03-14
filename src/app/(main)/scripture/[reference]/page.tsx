@@ -121,7 +121,7 @@ export default function ScriptureDetailPage() {
                     <div className="bg-primary-50/50 rounded-lg p-4 border border-primary-100/50">
                       <p className="font-serif font-semibold text-primary">&ldquo;Plans&rdquo; (Hebrew: machashavah)</p>
                       <p className="text-sm text-warm-600 mt-1">
-                        This word means &ldquo;thoughts, purposes, inventions.&rdquo; It implies deliberate, careful planning — 
+                        This word means &ldquo;thoughts, purposes, inventions.&rdquo; It implies deliberate, careful planning - 
                         not a casual afterthought. God&apos;s plans for you are intentional and specific.
                       </p>
                     </div>
@@ -136,7 +136,7 @@ export default function ScriptureDetailPage() {
                       <p className="font-serif font-semibold text-primary">&ldquo;Hope&rdquo; (Hebrew: tikvah)</p>
                       <p className="text-sm text-warm-600 mt-1">
                         Literally means &ldquo;a cord&rdquo; or &ldquo;a rope.&rdquo; It carries the image of being tethered to 
-                        something sure — like a lifeline. God&apos;s hope is not wishful thinking but a secure anchor for your soul.
+                        something sure - like a lifeline. God&apos;s hope is not wishful thinking but a secure anchor for your soul.
                       </p>
                     </div>
                   </div>
@@ -180,8 +180,8 @@ export default function ScriptureDetailPage() {
                 <CardContent className="space-y-4">
                   <p className="text-warm-700 leading-relaxed">
                     Just as God spoke to the exiles in Babylon, He speaks to you in your current season. 
-                    Whatever &ldquo;exile&rdquo; you may be experiencing — a difficult job, a challenging relationship, 
-                    an uncertain future — God&apos;s plans for you remain good.
+                    Whatever &ldquo;exile&rdquo; you may be experiencing - a difficult job, a challenging relationship, 
+                    an uncertain future - God&apos;s plans for you remain good.
                   </p>
                   <p className="text-warm-700 leading-relaxed">
                     Notice that God doesn&apos;t promise the absence of difficulty. He promises His presence in it. 

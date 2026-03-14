@@ -69,7 +69,7 @@ export default function DemoPage() {
   const handleCopy = () => {
     if (!devotional) return;
     navigator.clipboard.writeText(
-      `"${devotional.verse.text}" — ${devotional.verse.reference}`
+      `"${devotional.verse.text}" - ${devotional.verse.reference}`
     );
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
@@ -369,7 +369,7 @@ export default function DemoPage() {
                   size="lg"
                   className="bg-gradient-to-r from-amber-400 to-amber-500 text-[#1a1a2e] hover:from-amber-500 hover:to-amber-600 font-semibold shadow-lg shadow-amber-500/20"
                 >
-                  Begin Your Journey — Free
+                  Begin Your Journey - Free
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Button>
               </Link>

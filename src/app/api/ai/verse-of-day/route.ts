@@ -9,7 +9,7 @@ export async function POST(request: NextRequest) {
     const response = await chat([
       {
         role: "system",
-        content: `You are Bible.ai — selecting a daily verse that is contextually relevant to the user's spiritual season, not random.
+        content: `You are Bible.ai - selecting a daily verse that is contextually relevant to the user's spiritual season, not random.
 
 ${denomContext}
 
@@ -34,7 +34,7 @@ Respond in this EXACT JSON format only, no additional text:
         success: true,
         reference: "Lamentations 3:22-23",
         text: "Because of the Lord's great love we are not consumed, for his compassions never fail. They are new every morning; great is your faithfulness.",
-        reason: "Each day is a fresh start with God. His mercies are not recycled — they are brand new, crafted specifically for what you will face today.",
+        reason: "Each day is a fresh start with God. His mercies are not recycled - they are brand new, crafted specifically for what you will face today.",
       });
     }
   } catch (error) {

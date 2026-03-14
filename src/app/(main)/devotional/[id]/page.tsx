@@ -52,18 +52,18 @@ export default function DevotionalDetailPage() {
                 <div className="space-y-4 text-warm-700 leading-relaxed">
                   <p>
                     In the midst of life&apos;s storms, God offers a peace that doesn&apos;t make sense to the world. 
-                    This isn&apos;t the absence of trouble — it&apos;s the presence of God in the trouble. 
+                    This isn&apos;t the absence of trouble - it&apos;s the presence of God in the trouble. 
                     Paul wrote these words from a prison cell, yet his heart overflowed with joy and peace.
                   </p>
                   <p>
                     The key is in the practice: prayer, petition, and thanksgiving. When we bring our anxieties 
                     to God with grateful hearts, He replaces our worry with His supernatural peace. This peace 
-                    acts as a guard — the Greek word &quot;phroureo&quot; is a military term for a garrison protecting a city. 
+                    acts as a guard - the Greek word &quot;phroureo&quot; is a military term for a garrison protecting a city. 
                     God&apos;s peace stands guard over your heart and mind.
                   </p>
                   <p>
                     Notice Paul doesn&apos;t say we won&apos;t face anxious situations. He says in every situation, 
-                    bring it to God. Your anxiety is not a sign of weak faith — it&apos;s an invitation to deeper 
+                    bring it to God. Your anxiety is not a sign of weak faith - it&apos;s an invitation to deeper 
                     trust. Every worry is a prayer waiting to happen.
                   </p>
                 </div>

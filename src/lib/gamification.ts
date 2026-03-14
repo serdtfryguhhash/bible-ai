@@ -1,7 +1,7 @@
 "use client";
 
 /**
- * Gamification System — XP, Levels, Achievements, Badges
+ * Gamification System - XP, Levels, Achievements, Badges
  */
 
 const GAMIFICATION_KEY = "bible_ai_gamification";

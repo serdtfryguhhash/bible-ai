@@ -326,7 +326,7 @@ export default function LandingPage() {
               {
                 step: "2",
                 title: "Receive Your Devotional",
-                description: "AI generates a personalized devotional with relevant scripture, a heartfelt reflection, a prayer prompt, and an actionable step — all based on what you wrote.",
+                description: "AI generates a personalized devotional with relevant scripture, a heartfelt reflection, a prayer prompt, and an actionable step - all based on what you wrote.",
                 icon: Sparkles,
               },
               {
@@ -593,7 +593,7 @@ export default function LandingPage() {
             </p>
             <Link href="/signup">
               <Button variant="gold" size="xl" className="group">
-                Begin Your Journey — It&apos;s Free
+                Begin Your Journey - It&apos;s Free
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Button>
             </Link>

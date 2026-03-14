@@ -150,7 +150,7 @@ export const DAILY_VERSES = [
   },
   {
     reference: "Ephesians 2:8-9",
-    text: "For it is by grace you have been saved, through faith — and this is not from yourselves, it is the gift of God — not by works, so that no one can boast.",
+    text: "For it is by grace you have been saved, through faith - and this is not from yourselves, it is the gift of God - not by works, so that no one can boast.",
     theme: "grace",
   },
   {
@@ -220,7 +220,7 @@ export const DAILY_VERSES = [
   },
   {
     reference: "Psalm 27:1",
-    text: "The Lord is my light and my salvation — whom shall I fear? The Lord is the stronghold of my life — of whom shall I be afraid?",
+    text: "The Lord is my light and my salvation - whom shall I fear? The Lord is the stronghold of my life - of whom shall I be afraid?",
     theme: "confidence",
   },
 ];
@@ -235,10 +235,10 @@ export const READING_PLANS = [
     difficulty: "beginner" as const,
     participants_count: 12847,
     readings: [
-      { day: 1, title: "The Word Made Flesh", scripture_references: ["John 1:1-18"], commentary: "John opens his Gospel with a profound theological statement: Jesus is the eternal Word (Logos) of God. Before creation, before time itself, the Word existed in perfect communion with the Father. This Word is not merely spoken — He is the living expression of God's character, wisdom, and love. When the Word became flesh, the invisible God became visible, touchable, and knowable.", reflection_question: "How does knowing that Jesus has been present from the very beginning of creation change how you approach Him today?" },
-      { day: 2, title: "The Birth of Hope", scripture_references: ["Luke 1:26-56", "Luke 2:1-20"], commentary: "The angel Gabriel's announcement to Mary is one of the most tender moments in Scripture. A young woman in an obscure village receives the most extraordinary news in human history. Mary's response — 'I am the Lord's servant' — reveals a heart of profound faith and surrender. Her Magnificat that follows is a revolutionary song about God's upside-down kingdom where the humble are lifted up and the mighty brought low.", reflection_question: "What area of your life is God asking you to respond with 'I am the Lord's servant'?" },
+      { day: 1, title: "The Word Made Flesh", scripture_references: ["John 1:1-18"], commentary: "John opens his Gospel with a profound theological statement: Jesus is the eternal Word (Logos) of God. Before creation, before time itself, the Word existed in perfect communion with the Father. This Word is not merely spoken - He is the living expression of God's character, wisdom, and love. When the Word became flesh, the invisible God became visible, touchable, and knowable.", reflection_question: "How does knowing that Jesus has been present from the very beginning of creation change how you approach Him today?" },
+      { day: 2, title: "The Birth of Hope", scripture_references: ["Luke 1:26-56", "Luke 2:1-20"], commentary: "The angel Gabriel's announcement to Mary is one of the most tender moments in Scripture. A young woman in an obscure village receives the most extraordinary news in human history. Mary's response - 'I am the Lord's servant' - reveals a heart of profound faith and surrender. Her Magnificat that follows is a revolutionary song about God's upside-down kingdom where the humble are lifted up and the mighty brought low.", reflection_question: "What area of your life is God asking you to respond with 'I am the Lord's servant'?" },
       { day: 3, title: "Baptism and Temptation", scripture_references: ["Matthew 3:13-17", "Matthew 4:1-11"], commentary: "Jesus' baptism marks the beginning of His public ministry, affirmed by the Father's voice and the Spirit's descent. Immediately after this mountaintop experience, Jesus is led into the wilderness to face temptation. Notice that Jesus combats every temptation with Scripture. He shows us that spiritual battles are won not through our own strength but through the living Word of God.", reflection_question: "What Scripture could you hold onto during your current season of testing?" },
-      { day: 4, title: "The First Disciples", scripture_references: ["Mark 1:14-20", "John 1:35-51"], commentary: "Jesus doesn't begin His ministry alone. He calls ordinary people — fishermen, tax collectors — to follow Him. The call is simple yet radical: 'Follow me.' These men left their nets, their boats, their livelihoods. They didn't fully understand who Jesus was, but something in His invitation compelled them to leave everything behind.", reflection_question: "What 'nets' might Jesus be asking you to set down in order to follow Him more closely?" },
+      { day: 4, title: "The First Disciples", scripture_references: ["Mark 1:14-20", "John 1:35-51"], commentary: "Jesus doesn't begin His ministry alone. He calls ordinary people - fishermen, tax collectors - to follow Him. The call is simple yet radical: 'Follow me.' These men left their nets, their boats, their livelihoods. They didn't fully understand who Jesus was, but something in His invitation compelled them to leave everything behind.", reflection_question: "What 'nets' might Jesus be asking you to set down in order to follow Him more closely?" },
       { day: 5, title: "The Sermon on the Mount", scripture_references: ["Matthew 5:1-48"], commentary: "The Beatitudes turn worldly values upside down. Blessed are the poor in spirit, the mourning, the meek, the hungry. Jesus redefines what it means to live well. This is not a list of rules but a portrait of the human heart transformed by grace. Each beatitude describes a different facet of the life God desires for His children.", reflection_question: "Which beatitude resonates most with where you are in life right now?" },
     ],
   },
@@ -251,7 +251,7 @@ export const READING_PLANS = [
     difficulty: "beginner" as const,
     participants_count: 9432,
     readings: [
-      { day: 1, title: "The Way of the Righteous", scripture_references: ["Psalm 1"], commentary: "Psalm 1 serves as the gateway to the entire Psalter. It presents two paths: the way of the righteous who delight in God's Word, and the way of the wicked who are blown away like chaff. The righteous person is compared to a tree planted by streams of water — deeply rooted, consistently fruitful, and evergreen. This tree doesn't just survive; it thrives.", reflection_question: "What does it look like practically for you to 'delight in the law of the Lord' today?" },
+      { day: 1, title: "The Way of the Righteous", scripture_references: ["Psalm 1"], commentary: "Psalm 1 serves as the gateway to the entire Psalter. It presents two paths: the way of the righteous who delight in God's Word, and the way of the wicked who are blown away like chaff. The righteous person is compared to a tree planted by streams of water - deeply rooted, consistently fruitful, and evergreen. This tree doesn't just survive; it thrives.", reflection_question: "What does it look like practically for you to 'delight in the law of the Lord' today?" },
       { day: 2, title: "The Shepherd Psalm", scripture_references: ["Psalm 23"], commentary: "Perhaps the most beloved chapter in all of Scripture, Psalm 23 paints a picture of God as the Good Shepherd. David, who knew what it meant to tend sheep, understood that sheep need constant guidance, protection, and provision. In green pastures and dark valleys alike, the Shepherd is present. His rod corrects and His staff comforts.", reflection_question: "Are you currently in a 'green pasture' season or a 'valley' season? How is the Shepherd present with you?" },
       { day: 3, title: "A Cry from the Depths", scripture_references: ["Psalm 42", "Psalm 43"], commentary: "These twin psalms express a deep spiritual thirst. The psalmist feels forgotten by God, overwhelmed by waves of sorrow, yet keeps returning to a refrain of hope: 'Why are you downcast, O my soul? Put your hope in God.' This is the honest prayer of someone who is struggling but refusing to let go of faith. God invites our honest lament.", reflection_question: "When have you felt your soul 'downcast'? How did you find your way back to hope?" },
     ],
@@ -265,7 +265,7 @@ export const READING_PLANS = [
     difficulty: "intermediate" as const,
     participants_count: 7215,
     readings: [
-      { day: 1, title: "Righteousness by Faith", scripture_references: ["Romans 1:1-17", "Romans 3:21-31"], commentary: "Paul's letter to the Romans is his theological masterpiece. He establishes the foundational truth of Christianity: we are made right with God not through our own efforts but through faith in Jesus Christ. The righteous shall live by faith — this single phrase ignited the Reformation and continues to liberate hearts burdened by trying to earn God's approval.", reflection_question: "In what ways do you still try to 'earn' God's love rather than simply receiving it?" },
+      { day: 1, title: "Righteousness by Faith", scripture_references: ["Romans 1:1-17", "Romans 3:21-31"], commentary: "Paul's letter to the Romans is his theological masterpiece. He establishes the foundational truth of Christianity: we are made right with God not through our own efforts but through faith in Jesus Christ. The righteous shall live by faith - this single phrase ignited the Reformation and continues to liberate hearts burdened by trying to earn God's approval.", reflection_question: "In what ways do you still try to 'earn' God's love rather than simply receiving it?" },
     ],
   },
   {
@@ -277,7 +277,7 @@ export const READING_PLANS = [
     difficulty: "advanced" as const,
     participants_count: 3891,
     readings: [
-      { day: 1, title: "In the Beginning", scripture_references: ["Genesis 1-3"], commentary: "The opening chapters of Genesis establish everything: God is the sovereign Creator, humanity bears His image, sin enters through disobedience, and yet even in judgment there is grace. God clothes Adam and Eve before sending them from the garden — a beautiful foreshadowing of how He covers our shame with His love.", reflection_question: "What does it mean to you personally that you are made in the image of God?" },
+      { day: 1, title: "In the Beginning", scripture_references: ["Genesis 1-3"], commentary: "The opening chapters of Genesis establish everything: God is the sovereign Creator, humanity bears His image, sin enters through disobedience, and yet even in judgment there is grace. God clothes Adam and Eve before sending them from the garden - a beautiful foreshadowing of how He covers our shame with His love.", reflection_question: "What does it mean to you personally that you are made in the image of God?" },
     ],
   },
 ];

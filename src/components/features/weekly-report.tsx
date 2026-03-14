@@ -27,7 +27,7 @@ const DEFAULT_REPORT: WeeklyReportData = {
   streakDays: 7,
   growthInsight: "This week you showed remarkable consistency in your prayer life, especially in the areas of guidance and family. Your journal entries reveal a deepening trust in God's timing.",
   recommendedFocus: "Consider spending more time in the Psalms this week. Your recent prayers about peace and anxiety suggest the Psalms could be deeply nourishing for your soul right now.",
-  encouragement: "You are further along than you think. The fact that you showed up every day this week — even when it was hard — is a testament to the work God is doing in your heart. Keep going, faithful one.",
+  encouragement: "You are further along than you think. The fact that you showed up every day this week - even when it was hard - is a testament to the work God is doing in your heart. Keep going, faithful one.",
   generatedAt: new Date().toISOString(),
 };
 

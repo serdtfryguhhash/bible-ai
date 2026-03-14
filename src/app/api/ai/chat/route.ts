@@ -47,7 +47,7 @@ export async function POST(request: NextRequest) {
         response = await chat([
           {
             role: "system",
-            content: `You are Bible.ai — a compassionate faith companion. Help users with scripture, prayer, and spiritual growth. Be warm, grace-centered, and never judgmental.${memoryContext}`,
+            content: `You are Bible.ai - a compassionate faith companion. Help users with scripture, prayer, and spiritual growth. Be warm, grace-centered, and never judgmental.${memoryContext}`,
           },
           { role: "user", content: message },
         ]);

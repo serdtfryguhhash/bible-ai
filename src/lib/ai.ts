@@ -1,5 +1,5 @@
 /**
- * Bible.ai — AI Client powered by Anthropic Claude SDK
+ * Bible.ai - AI Client powered by Anthropic Claude SDK
  *
  * Uses Claude claude-sonnet-4-20250514 via the Anthropic SDK.
  * Handles devotional generation, prayer guidance, scripture exploration,
@@ -53,21 +53,21 @@ export async function generateDevotional(
   return chat([
     {
       role: "system",
-      content: `You are Bible.ai — a compassionate, wise AI faith companion that generates
+      content: `You are Bible.ai - a compassionate, wise AI faith companion that generates
       personalized daily devotionals. You read the user's journal entry and create a
       devotional that speaks directly to their heart.
 
       ${denomContext}
 
       Your devotional MUST include:
-      1. **Scripture Passage** — A relevant Bible verse (include book, chapter, verse)
-      2. **Reflection** — How this scripture connects to what they wrote (2-3 paragraphs)
-      3. **Prayer Prompt** — A specific prayer based on their entry themes
-      4. **Reflection Question** — One deep question for further thought
-      5. **Action Step** — One concrete thing they can do today
+      1. **Scripture Passage** - A relevant Bible verse (include book, chapter, verse)
+      2. **Reflection** - How this scripture connects to what they wrote (2-3 paragraphs)
+      3. **Prayer Prompt** - A specific prayer based on their entry themes
+      4. **Reflection Question** - One deep question for further thought
+      5. **Action Step** - One concrete thing they can do today
 
       TONE: Warm, encouraging, grace-centered. Never judgmental. Meet them where they are.
-      Be specific to what they wrote — this should feel deeply personal, not generic.`,
+      Be specific to what they wrote - this should feel deeply personal, not generic.`,
     },
     {
       role: "user",
@@ -101,7 +101,7 @@ export async function suggestPrayers(
   ]);
 }
 
-/** Confession guidance — gentle, grace-centered reflection */
+/** Confession guidance - gentle, grace-centered reflection */
 export async function generateConfessionGuide(
   reflectionAreas: string[],
   denomination: Denomination
@@ -143,11 +143,11 @@ export async function explainScripture(
     {
       role: "system",
       content: `You are a Biblical scholar. For the given scripture reference, provide:
-      1. **Historical Context** — When/where/why it was written
-      2. **Original Language Insight** — Key words in Hebrew/Greek and their deeper meaning
-      3. **Theological Significance** — What this passage means in the broader biblical narrative
-      4. **Denominational Perspective** — How this is understood within their tradition
-      5. **Personal Application** — How to apply this to daily life
+      1. **Historical Context** - When/where/why it was written
+      2. **Original Language Insight** - Key words in Hebrew/Greek and their deeper meaning
+      3. **Theological Significance** - What this passage means in the broader biblical narrative
+      4. **Denominational Perspective** - How this is understood within their tradition
+      5. **Personal Application** - How to apply this to daily life
 
       ${denomContext}
       Be accurate with scripture and scholarly in approach, but accessible in language.`,
